@@ -16,6 +16,14 @@
 		845E8ABE1B436DFE00138BC6 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845E8ABC1B436DFE00138BC6 /* IntroViewController.xib */; };
 		845E8AC21B43707F00138BC6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E8AC01B43707F00138BC6 /* MainViewController.m */; };
 		845E8AC31B43707F00138BC6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845E8AC11B43707F00138BC6 /* MainViewController.xib */; };
+		845E8AC71B4373E500138BC6 /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E8AC51B4373E500138BC6 /* SideMenuViewController.m */; };
+		845E8AC81B4373E500138BC6 /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845E8AC61B4373E500138BC6 /* SideMenuViewController.xib */; };
+		845E8ACD1B4375AA00138BC6 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E8ACB1B4375AA00138BC6 /* SettingsViewController.m */; };
+		845E8ACE1B4375AA00138BC6 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845E8ACC1B4375AA00138BC6 /* SettingsViewController.xib */; };
+		845E8AD31B43774400138BC6 /* CustomizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E8AD11B43774400138BC6 /* CustomizeViewController.m */; };
+		845E8AD41B43774400138BC6 /* CustomizeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845E8AD21B43774400138BC6 /* CustomizeViewController.xib */; };
+		845E8AD81B43781800138BC6 /* ReviewOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E8AD61B43781800138BC6 /* ReviewOrderViewController.m */; };
+		845E8AD91B43781800138BC6 /* ReviewOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845E8AD71B43781800138BC6 /* ReviewOrderViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,18 @@
 		845E8ABF1B43707F00138BC6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		845E8AC01B43707F00138BC6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		845E8AC11B43707F00138BC6 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		845E8AC41B4373E500138BC6 /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
+		845E8AC51B4373E500138BC6 /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
+		845E8AC61B4373E500138BC6 /* SideMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
+		845E8ACA1B4375AA00138BC6 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		845E8ACB1B4375AA00138BC6 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		845E8ACC1B4375AA00138BC6 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		845E8AD01B43774400138BC6 /* CustomizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomizeViewController.h; sourceTree = "<group>"; };
+		845E8AD11B43774400138BC6 /* CustomizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomizeViewController.m; sourceTree = "<group>"; };
+		845E8AD21B43774400138BC6 /* CustomizeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomizeViewController.xib; sourceTree = "<group>"; };
+		845E8AD51B43781800138BC6 /* ReviewOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewOrderViewController.h; sourceTree = "<group>"; };
+		845E8AD61B43781800138BC6 /* ReviewOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewOrderViewController.m; sourceTree = "<group>"; };
+		845E8AD71B43781800138BC6 /* ReviewOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewOrderViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +117,11 @@
 				845E8ABF1B43707F00138BC6 /* MainViewController.h */,
 				845E8AC01B43707F00138BC6 /* MainViewController.m */,
 				845E8AC11B43707F00138BC6 /* MainViewController.xib */,
+				845E8AC41B4373E500138BC6 /* SideMenuViewController.h */,
+				845E8AC51B4373E500138BC6 /* SideMenuViewController.m */,
+				845E8AC61B4373E500138BC6 /* SideMenuViewController.xib */,
+				845E8ACF1B4376FE00138BC6 /* CheckoutInterface */,
+				845E8AC91B43759300138BC6 /* SideMenuPages */,
 			);
 			path = "Mr Key";
 			sourceTree = "<group>";
@@ -125,6 +150,29 @@
 				845E8AAF1B43699800138BC6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		845E8AC91B43759300138BC6 /* SideMenuPages */ = {
+			isa = PBXGroup;
+			children = (
+				845E8ACA1B4375AA00138BC6 /* SettingsViewController.h */,
+				845E8ACB1B4375AA00138BC6 /* SettingsViewController.m */,
+				845E8ACC1B4375AA00138BC6 /* SettingsViewController.xib */,
+			);
+			name = SideMenuPages;
+			sourceTree = "<group>";
+		};
+		845E8ACF1B4376FE00138BC6 /* CheckoutInterface */ = {
+			isa = PBXGroup;
+			children = (
+				845E8AD01B43774400138BC6 /* CustomizeViewController.h */,
+				845E8AD11B43774400138BC6 /* CustomizeViewController.m */,
+				845E8AD21B43774400138BC6 /* CustomizeViewController.xib */,
+				845E8AD51B43781800138BC6 /* ReviewOrderViewController.h */,
+				845E8AD61B43781800138BC6 /* ReviewOrderViewController.m */,
+				845E8AD71B43781800138BC6 /* ReviewOrderViewController.xib */,
+			);
+			name = CheckoutInterface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,9 +255,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845E8AC81B4373E500138BC6 /* SideMenuViewController.xib in Resources */,
 				845E8AA21B43699800138BC6 /* Images.xcassets in Resources */,
+				845E8AD41B43774400138BC6 /* CustomizeViewController.xib in Resources */,
 				845E8AC31B43707F00138BC6 /* MainViewController.xib in Resources */,
 				845E8ABE1B436DFE00138BC6 /* IntroViewController.xib in Resources */,
+				845E8ACE1B4375AA00138BC6 /* SettingsViewController.xib in Resources */,
+				845E8AD91B43781800138BC6 /* ReviewOrderViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,11 +279,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845E8AC71B4373E500138BC6 /* SideMenuViewController.m in Sources */,
+				845E8AD81B43781800138BC6 /* ReviewOrderViewController.m in Sources */,
 				845E8A9A1B43699800138BC6 /* Mr_Key.xcdatamodeld in Sources */,
 				845E8A971B43699800138BC6 /* AppDelegate.m in Sources */,
 				845E8A941B43699800138BC6 /* main.m in Sources */,
 				845E8AC21B43707F00138BC6 /* MainViewController.m in Sources */,
 				845E8ABD1B436DFE00138BC6 /* IntroViewController.m in Sources */,
+				845E8AD31B43774400138BC6 /* CustomizeViewController.m in Sources */,
+				845E8ACD1B4375AA00138BC6 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

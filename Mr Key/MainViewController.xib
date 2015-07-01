@@ -22,12 +22,15 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJ4-eo-Zsk">
-                    <rect key="frame" x="246" y="71" width="53" height="30"/>
+                    <rect key="frame" x="238" y="71" width="68" height="30"/>
                     <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="15"/>
                     <state key="normal" title="Share">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="share:" destination="-1" eventType="touchUpInside" id="uKT-cU-M3Z"/>
+                    </connections>
                 </button>
                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ji5-DL-RAy">
                     <rect key="frame" x="0.0" y="56" width="320" height="2"/>
@@ -82,19 +85,9 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NQ-3z-Ys9">
-                    <rect key="frame" x="114" y="393" width="92" height="87"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <state key="normal" title="Scan Key" image="25944.png">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="10"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="sideMenu:" destination="-1" eventType="touchUpInside" id="ukG-Zx-fM0"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ytV-gn-7dM">
                     <rect key="frame" x="8" y="515" width="304" height="30"/>
@@ -107,6 +100,18 @@
                     <state key="normal" title="Mail Key">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="mail:" destination="-1" eventType="touchUpInside" id="2me-u7-Ant"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpu-td-jSp">
+                    <rect key="frame" x="113" y="477" width="94" height="30"/>
+                    <state key="normal" title="Add New Key">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addNewKey:" destination="-1" eventType="touchUpInside" id="3A0-Jm-hZU"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.062025212160000003" green="0.038619760199999999" blue="0.24233222069999999" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
@@ -124,7 +129,6 @@
         </view>
     </objects>
     <resources>
-        <image name="25944.png" width="256" height="256"/>
         <image name="Menu-128.png" width="256" height="256"/>
     </resources>
 </document>
