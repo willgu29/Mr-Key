@@ -12,6 +12,8 @@
 		845E8A9A1B43699800138BC6 /* Mr_Key.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 845E8A981B43699800138BC6 /* Mr_Key.xcdatamodeld */; };
 		845E8AA21B43699800138BC6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845E8AA11B43699800138BC6 /* Images.xcassets */; };
 		845E8AB11B43699800138BC6 /* Mr_KeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E8AB01B43699800138BC6 /* Mr_KeyTests.m */; };
+		845E8ABD1B436DFE00138BC6 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E8ABB1B436DFE00138BC6 /* IntroViewController.m */; };
+		845E8ABE1B436DFE00138BC6 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845E8ABC1B436DFE00138BC6 /* IntroViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 		845E8AAA1B43699800138BC6 /* Mr KeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mr KeyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		845E8AAF1B43699800138BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845E8AB01B43699800138BC6 /* Mr_KeyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mr_KeyTests.m; sourceTree = "<group>"; };
+		845E8ABA1B436DFE00138BC6 /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		845E8ABB1B436DFE00138BC6 /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		845E8ABC1B436DFE00138BC6 /* IntroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,9 @@
 				845E8AA11B43699800138BC6 /* Images.xcassets */,
 				845E8A981B43699800138BC6 /* Mr_Key.xcdatamodeld */,
 				845E8A911B43699800138BC6 /* Supporting Files */,
+				845E8ABA1B436DFE00138BC6 /* IntroViewController.h */,
+				845E8ABB1B436DFE00138BC6 /* IntroViewController.m */,
+				845E8ABC1B436DFE00138BC6 /* IntroViewController.xib */,
 			);
 			path = "Mr Key";
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				845E8AA21B43699800138BC6 /* Images.xcassets in Resources */,
+				845E8ABE1B436DFE00138BC6 /* IntroViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +221,7 @@
 				845E8A9A1B43699800138BC6 /* Mr_Key.xcdatamodeld in Sources */,
 				845E8A971B43699800138BC6 /* AppDelegate.m in Sources */,
 				845E8A941B43699800138BC6 /* main.m in Sources */,
+				845E8ABD1B436DFE00138BC6 /* IntroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Mr Key/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -329,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Mr Key/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
