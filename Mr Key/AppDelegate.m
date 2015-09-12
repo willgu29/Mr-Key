@@ -8,16 +8,23 @@
 
 #import "AppDelegate.h"
 #import "IntroViewController.h"
+#import "Stripe.h"
 
 @interface AppDelegate ()
 
 @end
+
+NSString * const StripePublishableKey = @"pk_test_UE8BywgUosEjRd0ZbwHuzJBy";
+
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [Stripe setDefaultPublishableKey:StripePublishableKey];
+
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
