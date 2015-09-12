@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="tableView" destination="UuF-ZS-ENt" id="sgF-Dl-3O8"/>
                 <outlet property="view" destination="T9t-5l-uA7" id="Ju3-HA-TnE"/>
             </connections>
         </placeholder>
@@ -113,6 +114,14 @@
                         <action selector="addNewKey:" destination="-1" eventType="touchUpInside" id="3A0-Jm-hZU"/>
                     </connections>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UuF-ZS-ENt">
+                    <rect key="frame" x="8" y="109" width="304" height="334"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="kYL-j5-03D"/>
+                        <outlet property="delegate" destination="-1" id="I2a-7N-7m4"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="0.062025212160000003" green="0.038619760199999999" blue="0.24233222069999999" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

@@ -11,6 +11,10 @@
 #import "CustomizeViewController.h"
 @interface MainViewController ()
 
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+
+@property (nonatomic) int lastSelectedRowIndex;
+
 @end
 
 @implementation MainViewController
@@ -39,17 +43,63 @@
 }
 -(IBAction)mail:(UIButton *)sender
 {
+    NSLog(@"Row selected: %d", _lastSelectedRowIndex);
     CustomizeViewController *customVC = [[CustomizeViewController alloc] initWithNibName:@"CustomizeViewController" bundle:nil];
     [self.navigationController pushViewController:customVC animated:YES];
 }
 -(IBAction)addNewKey:(UIButton *)sender
 {
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     
+    [self presentViewController:picker animated:YES completion:NULL];
 }
 -(IBAction)sideMenu:(UIButton *)sender
 {
     SideMenuViewController *sideVC = [[SideMenuViewController alloc] initWithNibName:@"SideMenuViewController" bundle:nil];
     [self.navigationController pushViewController:sideVC animated:YES];
+}
+
+#pragma mark - UITableView Delegate
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 10;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *simpleTableIdentifier = [NSString stringWithFormat:@"%ld_%ld", (long)indexPath.section, (long)indexPath.row];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil) {
+//        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"PictureTableViewCell" owner:self options:nil];
+//        cell = [nib objectAtIndex:0];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:
+            simpleTableIdentifier];
+    }
+    cell.textLabel.text = @"HI";
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    _lastSelectedRowIndex = indexPath.row;
+}
+
+#pragma mark - Photo taking
+
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    UIImage *chosenImage = info[UIImagePickerControllerOriginalImage];
+//    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
+}
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
 }
 
 
