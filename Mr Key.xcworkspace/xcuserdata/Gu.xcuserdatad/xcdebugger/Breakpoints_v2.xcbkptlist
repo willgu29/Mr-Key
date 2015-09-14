@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mr Key/Algorithm.m"
+            timestampString = "463879134.649351"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "-postImage:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__23-[Algorithm postImage:]_block_invoke"
+                  moduleName = "Mr Key"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Gu/TheGuSystem/Work/Programming/MobileProjects/MrKey/Mr-Key/Mr%20Key/Algorithm.m"
+                  timestampString = "463879134.777597"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__23-[Algorithm postImage:]_block_invoke17"
+                  moduleName = "Mr Key"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Gu/TheGuSystem/Work/Programming/MobileProjects/MrKey/Mr-Key/Mr%20Key/Algorithm.m"
+                  timestampString = "463879134.777774"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

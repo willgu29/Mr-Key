@@ -2,7 +2,7 @@
 # platform :ios, '6.0'
 
 pod "Stripe"
-
+pod "AFNetworking"
 target 'Mr Key' do
 
 end

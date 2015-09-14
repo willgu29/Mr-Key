@@ -15,6 +15,8 @@
 
 @property (nonatomic) int lastSelectedRowIndex;
 
+
+@property (nonatomic, strong) Algorithm *algorithm;
 @end
 
 @implementation MainViewController
@@ -22,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    _algorithm = [[Algorithm alloc] init];
 
 }
 -(void)viewWillAppear:(BOOL)animated
@@ -51,7 +54,7 @@
 {
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
-    picker.allowsEditing = YES;
+    picker.allowsEditing = NO;
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     
     [self presentViewController:picker animated:YES completion:NULL];
@@ -93,6 +96,10 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     UIImage *chosenImage = info[UIImagePickerControllerOriginalImage];
 //    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    _algorithm.delegate = self;
+    [_algorithm postImage:chosenImage];
+    
+    
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
 }
@@ -102,5 +109,9 @@
     
 }
 
+-(void)keyIDReceived:(NSInteger)serial
+{
+    NSLog(@"Serial %d", serial);
+}
 
 @end

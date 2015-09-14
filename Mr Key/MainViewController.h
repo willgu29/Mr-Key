@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Algorithm.h"
 
-@interface MainViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate>
+@interface MainViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, AlgorithmDelegate>
 
 @end

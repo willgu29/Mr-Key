@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0AB7E674ADE403E43E8842B7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C3DADC6FDE08BE17E84E7B /* libPods.a */; };
 		8400C0B91BA4EAE4004B779D /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400C0B81BA4EAE4004B779D /* PaymentViewController.m */; };
+		8400C0BC1BA6313F004B779D /* KeyID.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400C0BB1BA6313F004B779D /* KeyID.m */; };
+		8400C0C01BA6316C004B779D /* Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400C0BF1BA6316C004B779D /* Algorithm.m */; };
 		845E8A941B43699800138BC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E8A931B43699800138BC6 /* main.m */; };
 		845E8A971B43699800138BC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E8A961B43699800138BC6 /* AppDelegate.m */; };
 		845E8A9A1B43699800138BC6 /* Mr_Key.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 845E8A981B43699800138BC6 /* Mr_Key.xcdatamodeld */; };
@@ -42,6 +44,10 @@
 		5591E7EBB49F20BB5D254B31 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8400C0B71BA4EAE4004B779D /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
 		8400C0B81BA4EAE4004B779D /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
+		8400C0BA1BA6313F004B779D /* KeyID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyID.h; sourceTree = "<group>"; };
+		8400C0BB1BA6313F004B779D /* KeyID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyID.m; sourceTree = "<group>"; };
+		8400C0BE1BA6316C004B779D /* Algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Algorithm.h; sourceTree = "<group>"; };
+		8400C0BF1BA6316C004B779D /* Algorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Algorithm.m; sourceTree = "<group>"; };
 		845E8A8E1B43699800138BC6 /* Mr Key.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mr Key.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		845E8A921B43699800138BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845E8A931B43699800138BC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,6 +116,15 @@
 			name = ExtraVCs;
 			sourceTree = "<group>";
 		};
+		8400C0BD1BA63151004B779D /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				8400C0BE1BA6316C004B779D /* Algorithm.h */,
+				8400C0BF1BA6316C004B779D /* Algorithm.m */,
+			);
+			name = APIs;
+			sourceTree = "<group>";
+		};
 		845E8A851B43699800138BC6 = {
 			isa = PBXGroup;
 			children = (
@@ -133,11 +148,14 @@
 		845E8A901B43699800138BC6 /* Mr Key */ = {
 			isa = PBXGroup;
 			children = (
+				8400C0BD1BA63151004B779D /* APIs */,
 				8400C0B31BA4E85F004B779D /* ExtraVCs */,
 				845E8A951B43699800138BC6 /* AppDelegate.h */,
 				845E8A961B43699800138BC6 /* AppDelegate.m */,
 				845E8AA11B43699800138BC6 /* Images.xcassets */,
 				845E8A981B43699800138BC6 /* Mr_Key.xcdatamodeld */,
+				8400C0BA1BA6313F004B779D /* KeyID.h */,
+				8400C0BB1BA6313F004B779D /* KeyID.m */,
 				845E8A911B43699800138BC6 /* Supporting Files */,
 				845E8ABA1B436DFE00138BC6 /* IntroViewController.h */,
 				845E8ABB1B436DFE00138BC6 /* IntroViewController.m */,
@@ -351,6 +369,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8400C0BC1BA6313F004B779D /* KeyID.m in Sources */,
+				8400C0C01BA6316C004B779D /* Algorithm.m in Sources */,
 				845E8AC71B4373E500138BC6 /* SideMenuViewController.m in Sources */,
 				845E8AD81B43781800138BC6 /* ReviewOrderViewController.m in Sources */,
 				845E8A9A1B43699800138BC6 /* Mr_Key.xcdatamodeld in Sources */,
